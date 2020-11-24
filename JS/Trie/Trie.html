@@ -3,20 +3,17 @@
 <head>
   <title>Trie</title>
  
-  <script type="text/javascript" src="js/trie.js">
-  
-
-  </script>
+  <script type="text/javascript" src="js/trie.js"></script>
+  <script type="text/javascript" src="testTrieScript.js"></script>
   <script type="text/javascript" >
-  
-  function load_body(){
-    document.getElementById('words_in_trie').innerHTML = trie_words.join('\r\n');    
+  function loadBody(){
+    document.getElementById('words_in_trie').innerHTML = trie_words.join('\r\n');
   }
   </script>
 </head>
-<body onload="debugger;load_body();">
+<body onload="loadBody();">
 
-<h1>Example ot trie</h1>
+<h1>Example ot trie V 1.1</h1>
 
 <div >
 <h2>Words in trie</h2>
@@ -25,7 +22,7 @@
 </div>
 <div >
 <h2>Test Trie</h2>
-<label>Label:</label>
+<label>Word to check:</label>
 <input type="text" id="test_word" />
 <button onclick="testTrie();">Test</button>
 </div>
